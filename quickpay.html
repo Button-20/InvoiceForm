@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Quick Pay</title>
+	<meta charset="utf-8" lang="en">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+	<style type="text/css">
+		.logo{
+			height: 300px;
+			width: 300px;
+			object-fit: contain;
+			position: absolute;
+			top: -100px;
+			left: 0;
+		}
+
+		.col-2 {
+			padding: 100px 0px;
+		}
+
+		.justify-content-between{
+			padding-top: 100px;
+			
+		}
+
+		.badge{
+			background-color: #535C9E;
+			border-radius: 25px;
+		}
+
+		.list-group-item {
+			background-color: #535C9E;
+		}
+
+		.icon{
+			width: 15px;
+			padding-right: 5px;
+		}
+
+		.date, .fa{
+			color: #BFAFC3;
+		}
+
+		.form{
+			box-shadow: 0 0 10px rgba(0, 0, 0, .15);
+		}
+
+		.form > p{
+			font-weight: 400;
+		}
+
+		input {
+		    border: none;
+		    padding-left: 4px;
+		    font-size: 15px
+		}
+
+		.form-group{
+			padding: 10px 30px;
+		}
+
+		.numbr {
+		    border-bottom: 1px solid #c1bcbc;
+		    padding-bottom: 8px;
+		}
+
+		.line2 {
+		    border-bottom: 1px solid #c1bcbc;
+		    padding-bottom: 8px;
+		    padding-left: 0px
+		}
+
+		input.focus,
+		input:focus {
+		    outline: 0;
+		    box-shadow: none !important
+		}
+
+		.numbr.numbr.hover,
+		.numbr:hover {
+		    border-bottom: 1px solid aqua
+		}
+
+		.line2.hover,
+		.line2:hover {
+		    border-bottom: 1px solid aqua
+		}
+
+		.footer {
+		    background-color: #535C9E;
+		    color: white
+		}
+
+		.footer:hover {
+		    cursor: pointer;
+		    background-color: #531A9A;
+		}
+
+		.order{
+			padding: 20px;
+		}
+
+		button{
+			border: none;
+			background: none;
+			color: white;
+		}
+
+
+	</style>
+</head>
+<body>
+
+	<div class="container">
+		<div class="row h-25">
+			<img class="logo" src="http://www.ecggh.com/images/logobanner.jpg">	
+		</div>
+		
+
+		<div class="row d-flex justify-content-between h-75">
+			<div class="col-7 h-75">
+				<div class="card-title">
+					<p class="display-5">Electricity Payment</p>
+					<p class="text-muted lead fs-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis consequat.</p>
+				</div>
+
+				<br>
+
+				<div class="form">
+					<p class="display-6 fs-4 p-3">Payment Form</p>
+					<form>
+						<div class="form-group">
+							<div class="numbr mb-3 w-75"> <i class="fa fa-user text-muted p-0"></i> <input class="col-10 p-0" type="text" placeholder="Full Name"> </div>
+						</div>
+
+						<div class="form-group">
+							<div class="numbr mb-3 w-75"> <i class="fa fa-money text-muted p-0"></i> <input class="col-10 p-0" type="text" placeholder="Amount"> </div>
+						</div>
+
+						<div class="form-group">
+							<div class="numbr mb-3 w-75"> <i class="fa fa-phone text-muted p-0"></i> <input class="col-10 p-0" type="text" placeholder="Phone Number"> </div>
+						</div>
+
+						<div class="footer text-center p-0">
+				            <div class="col-lg-12 col-12 p-0">
+				                <button class="order h4">Pay Now</button>
+				            </div>
+        				</div>
+					</form>
+				</div>
+
+			</div>
+
+			<div class="col-4 d-flex align-top">
+				<div class="badge w-100">
+					<div class="p-2 w-100">
+						<p class="display-6">Debt Amount</p>
+ 						<p class="display-4 text-warning">&dollar; 45.00</p>
+							<div class="p-4 d-flex justify-content-between">
+							  	<p class="lead fs-6"><i class="fa fa-plus"></i> Cras justo odio</p> 
+							  	<p class="lead fs-6 date">17/05/20</p>
+							</div>
+							<div class="p-4 pt-0 d-flex justify-content-between">
+							  	<p class="lead fs-6"><i class="fa fa-plus"></i> Cras justo odio</p> 
+							  	<p class="lead fs-6 date">17/05/20</p>
+							</div>
+							<div class="p-4 pt-0 d-flex justify-content-between">
+							  	<p class="lead fs-6"><i class="fa fa-plus"></i> Cras justo odio</p> 
+							  	<p class="lead fs-6 date">17/05/20</p>
+							</div>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+
+
+	</div>
+
+
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>E.C.G. Payment Form</title>
+	<meta charset="utf-8" lang="en">
+
+	<style type="text/css">
+		@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,900;1,300&display=swap');
+
+		*{
+			font-family: 'Merriweather', serif;
+			margin: 0;
+			padding: 0;
+		}
+
+		body{
+			padding: 50px 200px;
+			height: 80vh;
+			width: auto;
+			justify-content: space-between;
+		}
+
+		.header{
+			padding-bottom: 30px;
+		}
+
+		.header h1{
+			padding: 10px 0px;
+		}
+
+		.header p{
+			max-width: 500px;
+			color: #9EA2B4;
+		}
+
+		.formandinvoice{
+			display: flex;
+			align-items: center;
+		}
+
+		.form{
+    	    width: 700px;
+    	    height: 300px;
+		}
+
+		.holder{
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+			padding: 30px;
+			background: red;
+			background-color: #fff;
+		}
+
+		.holder h2{
+			font-size: 20px;
+			text-transform: uppercase;
+		}
+
+
+		.invoice{
+			align-items: center;
+			border-radius: 10px;
+			background: #130892;
+			max-width: 300px;
+			margin-left: 20px;
+			height: 250px;
+		}
+
+		.invoice_holder{
+			padding-left: 20px;
+			padding-top: 10px;
+		}
+
+		.invoice_holder > p{
+			font-size: 14px;
+			color: #9EA2B4;
+		}
+
+		.invoice_holder > h2, h2 > p{
+			display: inline-block;
+		}
+
+		.invoice_holder > h2{
+			font-size: 40px;
+			color: #ebb734;
+		}
+
+		.invoice_holder > h2 > p{
+			font-size: 20px;
+			color: #9EA2B4;
+		}
+
+		.form-input{
+			padding: 10px 20px;
+			display: flex;
+			align-items: center;
+		}
+
+		.form-input > img{
+			height: 20px;
+			padding: 10px;
+		}
+
+		.input1{
+			height: 50px;
+		    border-radius: 25px;
+		    padding: 0 30px;
+		    display: block;
+		    background: #e6e6e6;
+		    font-size: 15px;
+		    line-height: 1.5;
+		    color: #666;
+		    border: none;
+		}
+
+		button, input:focus{
+			outline: none;
+		}
+
+		.btn{
+			margin-left: 550px;
+			margin-top: 40px;
+			border: none;
+			color: #F4F6F7;
+			padding: 0 30px;
+			border-radius: 10px;
+			height: 60px;
+			font-weight: bold;
+			background: #130892;
+			transition: 0.2s;
+		}
+
+		.btn:hover{
+			padding: 0 40px;
+			cursor: pointer;
+		}
+
+		@media only screen and (max-width: 1024px) {
+
+		}
+
+
+	
+
+	</style>	
+</head>
+<body>
+
+	<div class="header">
+		<h1>Confirm order and pay</h1>
+		<p>Please make the payment, after that you can enjoy all the features and benefits.</p>
+	</div>
+
+	<div class="formandinvoice">
+		<div class="form">
+			<div class="holder">
+				<h2>Payment Details</h2>
+				<form action="">
+					<div class="form-input">
+						<img src="images/user-alt-solid.svg">
+						<input class="input1" type="text" name="Name" placeholder="Name">
+					</div>
+
+					<div class="form-input">
+						<img src="images/coins-solid.svg">
+						<input class="input1" type="number" name="Amount" placeholder="Amount">
+					</div>
+
+					<div class="form-input">
+						<img src="images/phone-alt-solid.svg">
+						<input class="input1" type="tel" name="number" placeholder="Mobile Number">
+					</div>
+
+					
+				</form>
+			</div>
+
+			<button class="btn" type="submit">
+					<span >
+						PAY &dollar;840
+					</span>
+			</button>
+		</div>
+
+		<div class="invoice">
+			<div class="invoice_holder">
+				<p>You have to pay</p>
+				<h2>&dollar; 840<p>.12</p></h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat</p>
+			</div>	
+		</div>
+	</div>
+
+</body>
+</html>

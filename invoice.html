@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>E.C.G. PAYMENT INVOICE</title>
+	<meta charset="utf-8" lang="en">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+	<style type="text/css">
+		@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700;800&display=swap');
+
+		*{
+			margin: 0;
+			padding: 0;
+			font-family: 'Poppins', sans-serif;
+		}
+
+		body{
+			min-height: 100vh;
+			display: flex;
+  			align-items: center;
+		}
+
+		.container{
+			box-shadow: 0 0 10px rgb(0, 0, 0, 0.5);
+			margin-top: 20px;
+			margin-bottom: 20px;
+		}
+
+		.row{
+			padding: 30px 0px;
+		}
+		
+		.logo{
+			height: 100px;
+			width: 100px;
+			object-fit: contain;
+		}
+
+		.col > .salutation{
+			padding: 20px 0px;
+		}
+
+		.table-borderless{
+			border-bottom: hidden;
+		}
+
+				input {
+		    border: none;
+		    padding-left: 4px;
+		    font-size: 15px
+		}
+
+		.form-group{
+			padding: 10px 30px;
+		}
+
+		.numbr {
+		    border-bottom: 1px solid #c1bcbc;
+		    padding-bottom: 8px;
+		}
+
+		.line2 {
+		    border-bottom: 1px solid #c1bcbc;
+		    padding-bottom: 8px;
+		    padding-left: 0px
+		}
+
+		input.focus,
+		input:focus {
+		    outline: 0;
+		    box-shadow: none !important
+		}
+
+		.numbr.numbr.hover,
+		.numbr:hover {
+		    border-bottom: 1px solid aqua
+		}
+
+		.line2.hover,
+		.line2:hover {
+		    border-bottom: 1px solid aqua
+		}
+
+		.footer {
+		    background-color: #535C9E;
+		    color: white
+		}
+
+		.footer:hover {
+		    cursor: pointer;
+		    background-color: #531A9A;
+		}
+
+
+
+
+	</style>
+
+</head>
+<body>
+
+	<div class="container w-50 ml-auto">
+		<div class="row">
+				<img class="logo" src="https://www.graphic.com.gh/images/2016/NOVEMBER/nov15/ecg-ghana.jpg">
+		</div>
+
+		<div class="col">
+			<p class="lead fs-6 salutation">Dear Applicant,</p>
+			<section class="lead fs-6">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			</section>
+			<br>
+			<section class="lead fs-6">
+				Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			</section>
+			<br>
+
+			<h2 class="h2">Invoice</h2>
+
+			<div class="row">
+				<div class="col">
+					<p class="lead fs-6">Accra Metropolitan Assembly</p>
+					<p class="lead fs-6">Ghana</p>
+				</div>
+				<div class="col text-end">
+					<p class="lead fs-6"><strong>Invoice #</strong>: GA359849</p>
+					<p class="lead fs-6">Feb 10, 2021</p>
+				</div>
+			</div>
+
+			<div class="row">
+				<table class="table table-striped">
+				  <thead>
+				    <tr>
+				      <th scope="col">Description</th>
+				      <th scope="col" class="text-end">Amount (GHS)</th>
+				    </tr>
+				  </thead>
+				  <tbody>
+				    <tr>
+				      <td scope="row">Mark</td>
+				      <td class="text-end">100.00</td>
+				    </tr>
+				  </tbody>
+				  <tfoot>
+				  	<tr class="table-borderless">
+				  		<th>Total</th>
+				  		<th class="text-end">100.00</th>
+				  	</tr>
+				  </tfoot>
+				</table>
+			</div>
+
+			<div class="col-3 p-2">
+				<button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">Make Payment</button>
+			</div>
+
+
+
+			<!-- Modal -->
+			<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			  <div class="modal-dialog">
+			    <div class="modal-content">
+			      <div class="modal-header">
+			        <h5 class="modal-title" id="exampleModalLabel">Payment Form</h5>
+			        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			      </div>
+			      <form>
+				      <div class="modal-body">	
+							<div class="form-group">
+								<div class="numbr mb-3 w-75"> <i class="fa fa-user text-muted p-0"></i> <input class="col-10 p-0" type="text" placeholder="Full Name"> </div>
+							</div>
+
+							<div class="form-group">
+								<div class="numbr mb-3 w-75"> <i class="fa fa-money text-muted p-0"></i> <input class="col-10 p-0" type="text" placeholder="Amount"> </div>
+							</div>
+
+							<div class="form-group">
+								<div class="numbr mb-3 w-75"> <i class="fa fa-phone text-muted p-0"></i> <input class="col-10 p-0" type="text" placeholder="Phone Number"> </div>
+							</div>
+						
+
+				      </div>
+				      <div class="modal-footer">
+				        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+				        <button type="button" class="btn btn-primary">Submit</button>
+				      </div>
+				    </div>
+				</form>
+			  </div>
+			</div>
+
+		</div>
+
+		
+
+	</div>
+
+</body>
+</html>

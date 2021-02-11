@@ -1,0 +1,230 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>E.C.G. Invoice</title>
+    
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&display=swap');
+
+    .invoice-box {
+        max-width: 800px;
+        margin: auto;
+        padding: 30px;
+        border: 1px solid #eee;
+        box-shadow: 0 0 10px rgba(0, 0, 0, .15);
+        font-size: 16px;
+        line-height: 24px;
+        color: #555;
+    }
+    
+    .invoice-box table {
+        width: 100%;
+        line-height: inherit;
+        text-align: left;
+    }
+    
+    .invoice-box table td {
+        padding: 5px;
+        vertical-align: top;
+    }
+    
+    .invoice-box table tr td:nth-child(2) {
+        text-align: right;
+    }
+    
+    .invoice-box table tr.top table td {
+        padding-bottom: 20px;
+    }
+    
+    .invoice-box table tr.top table td.title {
+        font-size: 45px;
+        line-height: 45px;
+        color: #333;
+    }
+    
+    .invoice-box table tr.information table td {
+        padding-bottom: 40px;
+    }
+    
+    .heading{
+    	background-color: #F2E201;
+    	text-align: center;
+    	font-weight: bold;
+    	color: #0f0f0f;
+    }
+
+    .row{
+    	text-align: center;
+    	padding: 20px;
+    }
+
+    .row_2{
+    	text-align: center;
+    	background-color: #e8e4e3;
+    }
+    
+    
+    @media only screen and (max-width: 600px) {
+        .invoice-box table tr.top table td {
+            width: 100%;
+            display: block;
+            text-align: center;
+        }
+        
+        .invoice-box table tr.information table td {
+            width: 100%;
+            display: block;
+            text-align: center;
+        }
+    }
+
+   </style>
+
+</head>
+
+<body>
+    <div class="invoice-box">
+        <table cellpadding="0" cellspacing="0">
+            <tr class="top">
+                <td colspan="2">
+                    <table>
+                        <tr>
+                            <td class="title">
+                                <img src="images/logobanner.jpg" style="width:100%; max-width:300px;">
+                            </td>
+                            
+                            <td>
+                                Invoice #: 123<br>
+                                Created: January 1, 2015<br>
+                                Due: February 1, 2015
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            
+            <tr class="information">
+                <td colspan="2">
+                    <table>
+                        <tr>
+                            <td>
+                                Electricity Company of Ghana.<br>
+                                12345 Sunny Road<br>
+                                Sunnyville, CA 12345
+                            </td>
+                            
+                            <td>
+                                Acme Corp.<br>
+                                John Doe<br>
+                                john@example.com
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+
+               	<div class="main-table-information">
+               		<table cellpadding="0" cellspacing="0">
+               			<th>
+               				<tr class="heading">
+               					<td>
+               						Account Number
+               					</td>
+               					<td>
+               						Account Name
+               					</td>
+               					<td>
+               						Mobile Number
+               					</td>
+               					<td>
+               						Debt Amount
+               					</td>
+               					<td>
+               						Last Payment Date
+               					</td>
+               				</tr>
+               			</th>
+
+               			<tbody>
+               				<tr class="row">
+               					<td>
+               						ECG-00358593773951
+               					</td>
+               					<td>
+               						John Doe
+               					</td>
+               					<td>
+               						0244576674
+               					</td>
+               					<td>
+               						&cent;1,000
+               					</td>
+               					<td>
+               						02/02/2021
+               					</td>
+               				</tr>
+
+               				<tr class="row_2">
+               					<td>
+               						ECG-00358593773951
+               					</td>
+               					<td>
+               						John Doe
+               					</td>
+               					<td>
+               						0244576674
+               					</td>
+               					<td>
+               						&cent;1,000
+               					</td>
+               					<td>
+               						02/02/2021
+               					</td>
+               				</tr>
+
+               				<tr class="row">
+               					<td>
+               						ECG-00358593773951
+               					</td>
+               					<td>
+               						John Doe
+               					</td>
+               					<td>
+               						0244576674
+               					</td>
+               					<td>
+               						&cent;1,000
+               					</td>
+               					<td>
+               						02/02/2021
+               					</td>
+               				</tr>
+
+               				<tr class="row_2">
+               					<td>
+               						ECG-00358593773951
+               					</td>
+               					<td>
+               						John Doe
+               					</td>
+               					<td>
+               						0244576674
+               					</td>
+               					<td>
+               						&cent;1,000
+               					</td>
+               					<td>
+               						02/02/2021
+               					</td>
+               				</tr>
+               			</tbody>
+
+
+               		</table>
+               	</div>
+            
+        </table>
+    </div>
+</body>
+</html>
